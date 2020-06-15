@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpage</title>
+</head>
+<body id="backgroundColor">
+    <h2>Background Generator</h2>
+    <input id="colorBtn" type="color">
+    
+    <script>
+     var _ = require('lodash');
+    var color = document.getElementById('colorBtn');
+        var backgroundColor = document.getElementById('backgroundColor');
+        color.addEventListener('input', () => {
+            console.log(color.value);
+            backgroundColor.style.background = color.value;
+        })
+        
+        
+    
+    </script>
+</body>
+</html>
